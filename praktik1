@@ -1,0 +1,10 @@
+from datetime import date
+
+f = open(f"{date.today()}.txt","w")
+while True:
+    a= input("Введите свои действия:")
+    if str(a)=="стоп":
+        break
+    f.write(f"{a}\n")
+f.close()
+    
